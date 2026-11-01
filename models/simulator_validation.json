@@ -1,0 +1,282 @@
+{
+  "summary": {
+    "states_compared": 27,
+    "simulator_mean_abs_error": 0.0716,
+    "simulator_max_abs_error": 0.2539,
+    "simulator_bias": -0.0682,
+    "model_mean_abs_error": 0.0603,
+    "note": "Errors are against realised historical win rates in matching states. Model rows are in-sample for these states, so the model error is not an out-of-sample measure."
+  },
+  "rows": [
+    {
+      "wickets_left": 3,
+      "balls_left": 18,
+      "rrr": 11.0,
+      "runs_needed": 33,
+      "historical_sample": 105,
+      "realised_win_rate": 0.1429,
+      "model_probability": 0.1674,
+      "simulator_balanced": 0.0828
+    },
+    {
+      "wickets_left": 3,
+      "balls_left": 18,
+      "rrr": 13.0,
+      "runs_needed": 39,
+      "historical_sample": 100,
+      "realised_win_rate": 0.06,
+      "model_probability": 0.0538,
+      "simulator_balanced": 0.0225
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 18,
+      "rrr": 7.0,
+      "runs_needed": 21,
+      "historical_sample": 166,
+      "realised_win_rate": 0.8554,
+      "model_probability": 0.865,
+      "simulator_balanced": 0.7875
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 18,
+      "rrr": 9.0,
+      "runs_needed": 27,
+      "historical_sample": 187,
+      "realised_win_rate": 0.5401,
+      "model_probability": 0.6443,
+      "simulator_balanced": 0.51
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 18,
+      "rrr": 11.0,
+      "runs_needed": 33,
+      "historical_sample": 115,
+      "realised_win_rate": 0.2696,
+      "model_probability": 0.3387,
+      "simulator_balanced": 0.2357
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 18,
+      "rrr": 13.0,
+      "runs_needed": 39,
+      "historical_sample": 106,
+      "realised_win_rate": 0.1887,
+      "model_probability": 0.1265,
+      "simulator_balanced": 0.087
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 30,
+      "rrr": 7.0,
+      "runs_needed": 35,
+      "historical_sample": 174,
+      "realised_win_rate": 0.8333,
+      "model_probability": 0.7945,
+      "simulator_balanced": 0.7418
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 30,
+      "rrr": 9.0,
+      "runs_needed": 45,
+      "historical_sample": 178,
+      "realised_win_rate": 0.4382,
+      "model_probability": 0.5186,
+      "simulator_balanced": 0.4123
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 30,
+      "rrr": 11.0,
+      "runs_needed": 55,
+      "historical_sample": 217,
+      "realised_win_rate": 0.129,
+      "model_probability": 0.2309,
+      "simulator_balanced": 0.135
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 30,
+      "rrr": 13.0,
+      "runs_needed": 65,
+      "historical_sample": 218,
+      "realised_win_rate": 0.055,
+      "model_probability": 0.0772,
+      "simulator_balanced": 0.0255
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 48,
+      "rrr": 7.0,
+      "runs_needed": 56,
+      "historical_sample": 113,
+      "realised_win_rate": 0.7611,
+      "model_probability": 0.6445,
+      "simulator_balanced": 0.5072
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 48,
+      "rrr": 9.0,
+      "runs_needed": 72,
+      "historical_sample": 167,
+      "realised_win_rate": 0.3713,
+      "model_probability": 0.3308,
+      "simulator_balanced": 0.1578
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 48,
+      "rrr": 11.0,
+      "runs_needed": 88,
+      "historical_sample": 163,
+      "realised_win_rate": 0.135,
+      "model_probability": 0.1188,
+      "simulator_balanced": 0.0195
+    },
+    {
+      "wickets_left": 5,
+      "balls_left": 48,
+      "rrr": 13.0,
+      "runs_needed": 104,
+      "historical_sample": 169,
+      "realised_win_rate": 0.0059,
+      "model_probability": 0.0355,
+      "simulator_balanced": 0.0025
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 18,
+      "rrr": 7.0,
+      "runs_needed": 21,
+      "historical_sample": 225,
+      "realised_win_rate": 0.9956,
+      "model_probability": 0.9423,
+      "simulator_balanced": 0.856
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 18,
+      "rrr": 9.0,
+      "runs_needed": 27,
+      "historical_sample": 138,
+      "realised_win_rate": 0.6594,
+      "model_probability": 0.8219,
+      "simulator_balanced": 0.616
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 30,
+      "rrr": 7.0,
+      "runs_needed": 35,
+      "historical_sample": 308,
+      "realised_win_rate": 0.9058,
+      "model_probability": 0.9078,
+      "simulator_balanced": 0.8975
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 30,
+      "rrr": 9.0,
+      "runs_needed": 45,
+      "historical_sample": 273,
+      "realised_win_rate": 0.5897,
+      "model_probability": 0.733,
+      "simulator_balanced": 0.6032
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 30,
+      "rrr": 11.0,
+      "runs_needed": 55,
+      "historical_sample": 174,
+      "realised_win_rate": 0.3793,
+      "model_probability": 0.4334,
+      "simulator_balanced": 0.2545
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 48,
+      "rrr": 7.0,
+      "runs_needed": 56,
+      "historical_sample": 444,
+      "realised_win_rate": 0.7815,
+      "model_probability": 0.822,
+      "simulator_balanced": 0.8073
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 48,
+      "rrr": 9.0,
+      "runs_needed": 72,
+      "historical_sample": 458,
+      "realised_win_rate": 0.4345,
+      "model_probability": 0.5574,
+      "simulator_balanced": 0.3812
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 48,
+      "rrr": 11.0,
+      "runs_needed": 88,
+      "historical_sample": 323,
+      "realised_win_rate": 0.2043,
+      "model_probability": 0.2556,
+      "simulator_balanced": 0.0633
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 48,
+      "rrr": 13.0,
+      "runs_needed": 104,
+      "historical_sample": 209,
+      "realised_win_rate": 0.1292,
+      "model_probability": 0.0856,
+      "simulator_balanced": 0.0045
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 66,
+      "rrr": 7.0,
+      "runs_needed": 77,
+      "historical_sample": 436,
+      "realised_win_rate": 0.7317,
+      "model_probability": 0.6841,
+      "simulator_balanced": 0.6787
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 66,
+      "rrr": 9.0,
+      "runs_needed": 99,
+      "historical_sample": 444,
+      "realised_win_rate": 0.2748,
+      "model_probability": 0.3662,
+      "simulator_balanced": 0.2015
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 66,
+      "rrr": 11.0,
+      "runs_needed": 121,
+      "historical_sample": 362,
+      "realised_win_rate": 0.0746,
+      "model_probability": 0.1336,
+      "simulator_balanced": 0.0173
+    },
+    {
+      "wickets_left": 7,
+      "balls_left": 66,
+      "rrr": 13.0,
+      "runs_needed": 143,
+      "historical_sample": 184,
+      "realised_win_rate": 0.0054,
+      "model_probability": 0.0395,
+      "simulator_balanced": 0.0005
+    }
+  ]
+}

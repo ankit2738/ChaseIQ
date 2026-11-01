@@ -1,0 +1,207 @@
+{
+  "trained_at": "2026-11-01T04:48:07+00:00",
+  "selected_model": "logistic_regression",
+  "selection_rule": "lowest log loss on the validation partition (matches before the test set)",
+  "features": [
+    "runs_needed",
+    "balls_left",
+    "wickets_left",
+    "crr",
+    "rrr",
+    "rrr_minus_crr",
+    "target"
+  ],
+  "label": "chasing side won the match (1) or lost (0)",
+  "data": {
+    "chase_states_total": 552963,
+    "matches_total": 5463,
+    "fit_states": 380029,
+    "validation_states": 65543,
+    "test_states": 107391,
+    "fit_matches": 3714,
+    "validation_matches": 656,
+    "test_matches": 1093,
+    "test_period": [
+      "2025-10-09",
+      "2026-10-25"
+    ],
+    "chase_win_rate_test": 0.4192157629596521
+  },
+  "models": {
+    "logistic_regression": {
+      "test": {
+        "accuracy": 0.8488793288078145,
+        "precision": 0.8035552369103599,
+        "recall": 0.8464460239893381,
+        "f1": 0.8244431703860757,
+        "log_loss": 0.32073523327218434,
+        "brier": 0.10277468755742891,
+        "roc_auc": 0.9350988306590702
+      },
+      "validation_log_loss": 0.353302480957923
+    },
+    "random_forest": {
+      "test": {
+        "accuracy": 0.8512817647661349,
+        "precision": 0.8106645562851582,
+        "recall": 0.8418702798756108,
+        "f1": 0.8259727806653373,
+        "log_loss": 0.31781691791089883,
+        "brier": 0.10172626114551168,
+        "roc_auc": 0.9359740790197543
+      },
+      "validation_log_loss": 0.35443505739477005
+    },
+    "gradient_boosting": {
+      "test": {
+        "accuracy": 0.8497639466994441,
+        "precision": 0.810682326621924,
+        "recall": 0.8371168369613505,
+        "f1": 0.8236875464440268,
+        "log_loss": 0.322731358655789,
+        "brier": 0.10321552566362159,
+        "roc_auc": 0.933724091999009
+      },
+      "validation_log_loss": 0.3577805603013604
+    },
+    "baseline_majority": {
+      "test": {
+        "accuracy": 0.5807842370403479,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "log_loss": 0.6823027624534563,
+        "brier": 0.24459068011544507,
+        "roc_auc": 0.5
+      }
+    },
+    "baseline_rrr_only": {
+      "test": {
+        "accuracy": 0.81802013204086,
+        "precision": 0.7608691200262129,
+        "recall": 0.825277654375833,
+        "f1": 0.7917656711169833,
+        "log_loss": 0.3775709310385489,
+        "brier": 0.12302420146968453,
+        "roc_auc": 0.9087498281036689
+      }
+    }
+  },
+  "calibration_test": [
+    {
+      "bin_low": 0.0,
+      "bin_high": 0.1,
+      "mean_predicted": 0.02263557224014911,
+      "observed_rate": 0.014675931472385289,
+      "count": 33388
+    },
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "mean_predicted": 0.14794253591125697,
+      "observed_rate": 0.12000947755005331,
+      "count": 8441
+    },
+    {
+      "bin_low": 0.2,
+      "bin_high": 0.30000000000000004,
+      "mean_predicted": 0.24768851251955942,
+      "observed_rate": 0.22237938079522238,
+      "count": 6363
+    },
+    {
+      "bin_low": 0.30000000000000004,
+      "bin_high": 0.4,
+      "mean_predicted": 0.3496093024883477,
+      "observed_rate": 0.3010515603799186,
+      "count": 5896
+    },
+    {
+      "bin_low": 0.4,
+      "bin_high": 0.5,
+      "mean_predicted": 0.45037838825287596,
+      "observed_rate": 0.37755102040816324,
+      "count": 5880
+    },
+    {
+      "bin_low": 0.5,
+      "bin_high": 0.6000000000000001,
+      "mean_predicted": 0.5502147532544603,
+      "observed_rate": 0.4654985549132948,
+      "count": 5536
+    },
+    {
+      "bin_low": 0.6000000000000001,
+      "bin_high": 0.7000000000000001,
+      "mean_predicted": 0.6502877526068491,
+      "observed_rate": 0.5710064028895091,
+      "count": 6091
+    },
+    {
+      "bin_low": 0.7000000000000001,
+      "bin_high": 0.8,
+      "mean_predicted": 0.7506078880235917,
+      "observed_rate": 0.6992737512968726,
+      "count": 6747
+    },
+    {
+      "bin_low": 0.8,
+      "bin_high": 0.9,
+      "mean_predicted": 0.8526293908213876,
+      "observed_rate": 0.8668096259232785,
+      "count": 8394
+    },
+    {
+      "bin_low": 0.9,
+      "bin_high": 1.0,
+      "mean_predicted": 0.9640539835721615,
+      "observed_rate": 0.9710965867828613,
+      "count": 20655
+    }
+  ],
+  "permutation_importance_test_auc": [
+    {
+      "feature": "runs_needed",
+      "importance_mean": 0.21385092214059978,
+      "importance_std": 0.004684763469006204
+    },
+    {
+      "feature": "rrr_minus_crr",
+      "importance_mean": 0.14956422256136404,
+      "importance_std": 0.003909547917135649
+    },
+    {
+      "feature": "rrr",
+      "importance_mean": 0.13574084470908054,
+      "importance_std": 0.003052011507786919
+    },
+    {
+      "feature": "wickets_left",
+      "importance_mean": 0.041334553716633894,
+      "importance_std": 0.0014123607207057124
+    },
+    {
+      "feature": "target",
+      "importance_mean": 0.040256339798992645,
+      "importance_std": 0.002661906327914846
+    },
+    {
+      "feature": "crr",
+      "importance_mean": 0.01702743314469668,
+      "importance_std": 0.000993718657707072
+    },
+    {
+      "feature": "balls_left",
+      "importance_mean": 0.008181850730165233,
+      "importance_std": 0.0003282165949024994
+    }
+  ],
+  "limitations": [
+    "Trained on T20 chases of 20-over matches only, from the uploaded Cricsheet data.",
+    "Features describe the score state only; team strength, venue, pitch and player quality are not modelled.",
+    "Train, validation and test partitions are grouped by match to prevent match overlap. Metrics are calculated over pooled ball-states, not averaged per match; states within a match are correlated and should not be interpreted as independent match-level observations.",
+    "Probabilities are model estimates from historical frequencies, not guarantees for any live match.",
+    "Test metrics come from a single chronological hold-out; performance on future seasons may differ."
+  ],
+  "training_seconds": 91.1
+}

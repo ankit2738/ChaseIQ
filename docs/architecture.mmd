@@ -1,0 +1,38 @@
+flowchart LR
+    subgraph Input["Input (you provide)"]
+        Z["Cricsheet T20 JSON ZIP<br/>data/raw/*.zip"]
+    end
+
+    subgraph Pipeline["Pipeline (src/)"]
+        I["ingest.py<br/>parse, clean,<br/>quality report"]
+        F["features.py<br/>chase states,<br/>chronological split"]
+        M["model.py<br/>train, select,<br/>evaluate, persist"]
+        S["strategy.py<br/>analogues, simulator,<br/>scenarios"]
+        A["analytics.py<br/>players, matchups,<br/>teams, pressure"]
+    end
+
+    subgraph Stores["Generated (git-ignored)"]
+        P["data/processed/<br/>matches.csv, deliveries.pkl,<br/>chase_states.pkl"]
+        MD["models/<br/>model.joblib, evaluation.json,<br/>simulator_validation.json"]
+    end
+
+    subgraph Server["app.py (standard-library HTTP server)"]
+        ST["store.py<br/>in-memory data store"]
+        API["api.py<br/>JSON endpoints"]
+        STATIC["static/<br/>index.html, styles.css, app.js"]
+    end
+
+    Browser["Browser<br/>11 pages, SVG charts"]
+
+    Z --> I --> P
+    P --> F --> M --> MD
+    P --> S
+    MD --> S
+    I -. "tables" .-> ST
+    P --> ST
+    MD --> ST
+    ST --> API
+    S --> API
+    A --> API
+    API -- "/api/* JSON" --> Browser
+    STATIC -- "/" --> Browser

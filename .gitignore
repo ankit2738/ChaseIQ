@@ -1,0 +1,9 @@
+# Uploaded Cricsheet archives and generated data (rebuild with: python app.py --build)
+data/raw/*.zip
+data/processed/
+# Trained model artifacts (rebuild with: python app.py --build)
+models/*.joblib
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

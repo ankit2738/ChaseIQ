@@ -1,0 +1,6 @@
+# ChaseIQ runtime requirements. No web framework: the server uses Python's standard library.
+# Tested with Python 3.13, pandas 3.0.5, numpy 2.5.3, scikit-learn 1.9.1, joblib 1.6.0.
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+joblib>=1.3
